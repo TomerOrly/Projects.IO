@@ -1,0 +1,357 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Tomer Orly | Data Analyst Portfolio</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+
+        <style>
+            /* --- GLOBAL PROFESSIONAL TWEAKS --- */
+            body, h1, h2, h3, p, li, a {
+                font-family: 'Inter', sans-serif; /* Cleaner, modern font */
+            }
+
+            /* --- PROJECT CARDS LAYOUT --- */
+            .posts {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 40px; /* Space between cards */
+                margin-top: 2em;
+            }
+
+            .posts article {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                background: #ffffff;
+                border: 1px solid #eeeeee;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.05); /* Subtle shadow */
+                transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+                border-radius: 8px; /* Rounded corners */
+                overflow: hidden;
+                width: 100%;
+                max-width: 45%; /* 2 cards per row on desktop */
+            }
+
+            /* Hover Effect: Card lifts up slightly */
+            .posts article:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+            }
+
+            /* --- IMAGES --- */
+            .posts article .image.fit {
+                margin: 0 0 1.5rem 0;
+                overflow: hidden; /* Keeps image inside rounded corners */
+            }
+
+            .posts article .image.fit img {
+                width: 100%;
+                height: 250px; /* Fixed height */
+                object-fit: cover;
+                transition: transform 0.5s ease;
+            }
+
+            /* Hover Effect: Image zooms in slightly */
+            .posts article:hover .image.fit img {
+                transform: scale(1.05);
+            }
+
+            /* --- CONTENT TYPOGRAPHY --- */
+            .posts article header {
+                padding: 0 1.5rem;
+                text-align: center;
+            }
+
+            .posts article header h2 {
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+            
+            .posts article header h2 a {
+                text-decoration: none;
+                border-bottom: none;
+                color: #333;
+            }
+
+            .posts article p {
+                padding: 0 1.5rem;
+                font-size: 0.95rem;
+                color: #555;
+                line-height: 1.6;
+                flex-grow: 1; /* Pushes buttons down */
+            }
+
+            /* --- NEW: TECH STACK BADGES --- */
+            .tech-stack {
+                padding: 0 1.5rem 1rem 1.5rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 8px;
+            }
+
+            .badge {
+                background-color: #f3f4f6;
+                color: #4b5563;
+                padding: 4px 10px;
+                border-radius: 15px;
+                font-size: 0.75rem;
+                font-weight: 600;
+                border: 1px solid #e5e7eb;
+                letter-spacing: 0.5px;
+            }
+
+            /* --- BUTTONS --- */
+            .posts article .actions {
+                padding: 1.5rem;
+                margin-top: auto;
+                background-color: #fafafa; /* Slight distinct background for button area */
+                border-top: 1px solid #eee;
+                display: flex;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            .button {
+                font-size: 0.8rem;
+                letter-spacing: 1px;
+                padding: 0 1.5rem;
+                height: 3rem;
+                line-height: 3rem;
+                border-radius: 4px;
+                text-transform: uppercase;
+                font-weight: 600;
+            }
+
+            /* Mobile Adjustments */
+            @media screen and (max-width: 980px) {
+                .posts article {
+                    max-width: 100%; /* 1 card per row on mobile */
+                }
+            }
+        </style>
+    </head>
+    <body class="is-preload">
+
+        <div id="wrapper" class="fade-in">
+
+            <div id="intro">
+                <h1>Tomer Orly<br /></h1>
+                <h2>Data Analyst Expert</h2>
+                <p>Specializing in SQL, Python, Power BI & Tableau<br />
+                tomeror77@gmail.com | 050-9493616</p>
+                <ul class="actions">
+                    <li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+                </ul>
+            </div>
+
+            <header id="header">
+                <a href="" class="logo">TO</a>
+            </header>
+
+            <nav id="nav">
+                <ul class="links">
+                    <li class="active"><a>Portfolio Projects</a></li>
+                </ul>
+                <ul class="icons">
+                    <li><a href="https://x.com/tomerorly77" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                    <li><a href="https://www.linkedin.com/in/tomer-orly-4a050522b/" class="icon brands alt fa-linkedin"><span class="label">Linkdein</span></a></li>
+                    <li><a href="https://tomerorly.github.io/Projects.IO/" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                </ul>
+            </nav>
+
+            <div id="main">
+
+                <article class="post featured">
+                    <header class="major">
+                        <h2><a>Data Analyst<br />
+                        at Apple</a></h2>
+                        <p>Passionate about leveraging technology to drive strategic decision-making and innovation. With a strong foundation in Information Systems and Data Analysis, I create impactful solutions that contribute to organizational success.</p>
+                    </header>
+                    <a href="#" class="image main"><img src="images/pic01.jpg" alt=""/></a>
+                </article>
+
+                <section class="posts">
+                    
+                    <article>
+                        <header>
+                            <h2><a href="#">SQL: Sales Database</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/Sa.jpg" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">SQL Server</span>
+                            <span class="badge">Data Modeling</span>
+                            <span class="badge">ETL</span>
+                        </div>
+                        <p>Extracted and consolidated relevant data from the AdventureWorks2022 database to create a new "Sales" schema. Key entities include SalesTerritory, SalesPerson, Customer, and Product. Used as a foundation for advanced trend analysis.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Building%20Sales%20Database%20%26%20Creating%20Tables.sql" class="button">Create Tables</a></li>
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Queries.sql" class="button">View Queries</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Advanced SQL: WWI</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/Importes.jpg" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Advanced SQL</span>
+                            <span class="badge">Window Functions</span>
+                            <span class="badge">Aggregation</span>
+                        </div>
+                        <p>A deep dive into the Wide World Importers database. This project utilizes advanced SQL techniques including window functions, pivots, and complex aggregations to calculate growth rates, rank customers, and identify top-performing products.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/AdvancedSQLQueries.sql" class="button">View Code</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Python: SuperStore Analysis</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/Super.png" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Python</span>
+                            <span class="badge">Pandas</span>
+                            <span class="badge">Seaborn</span>
+                            <span class="badge">Matplotlib</span>
+                        </div>
+                        <p>In-depth analysis of SuperStore sales data uncovering insights across profitability, geography, and customer segments. Leveraging Pandas and Seaborn to deliver data-driven recommendations for strategic decision-making.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/SuperStore%20Sales%20Analysis.ipynb" class="button">View Notebook</a></li>
+                            <li><a href="https://raw.githubusercontent.com/TomerOrly/projectsData/refs/heads/main/SuperStoreOrders.csv" class="button">Get Data</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Python: AI Jobs Market</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/AI_J.png" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Python</span>
+                            <span class="badge">Data Analysis</span>
+                            <span class="badge">Visualization</span>
+                        </div>
+                        <p>Analysis of the global AI job market, uncovering trends in compensation, required skills, and remote work adoption. Supports decision-making for employers and job seekers in the evolving AI landscape.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/AI_Jobs_Main.ipynb" class="button">View Notebook</a></li>
+                            <li><a href="https://raw.githubusercontent.com/TomerOrly/projectsData/refs/heads/main/ai_job_dataset.csv" class="button">Get Data</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Power BI: Business Insights</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/Business.jpg" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Power BI</span>
+                            <span class="badge">DAX</span>
+                            <span class="badge">Dashboarding</span>
+                        </div>
+                        <p>Interactive dashboard providing a centralized view of Sales, Customer Engagement, Inventory, and HR. Consolidates essential KPIs to support smarter, faster business decisions at every level.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Sales.pbix" class="button">Download .pbix</a></li>
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Sales_Summary.pdf" class="button">Read Summary</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Tableau: HR Dashboard</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/HR_Photo.jpg" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Tableau</span>
+                            <span class="badge">HR Analytics</span>
+                            <span class="badge">Interactive Viz</span>
+                        </div>
+                        <p>Overview of the total workforce with breakdowns by department, location, gender, and age. Features customizable filters to analyze employee distribution and demographics effectively.</p>
+                        <ul class="actions special">
+                            <li><a href="https://public.tableau.com/views/HRProject_17280593099190/HRDetails?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" class="button">View Dashboard</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Web Scraping: NHL Stats</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/NHL.jpg" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Python</span>
+                            <span class="badge">BeautifulSoup</span>
+                            <span class="badge">Requests</span>
+                        </div>
+                        <p>Automation script designed to scrape, clean, and compile historical hockey data. Demonstrates handling multi-page pagination and structuring raw HTML into usable Pandas DataFrames.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/web_scrap_hockeyTeams.ipynb" class="button">View Script</a></li>
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Hockey%20Teams.csv" class="button">Get Data</a></li>
+                        </ul>
+                    </article>
+
+                    <article>
+                        <header>
+                            <h2><a href="#">Web Scraping: Demographics</a></h2>
+                        </header>
+                        <a class="image fit"><img src="images/World.jpg" alt="" /></a>
+                        <div class="tech-stack">
+                            <span class="badge">Python</span>
+                            <span class="badge">BeautifulSoup</span>
+                            <span class="badge">Requests</span>
+                        </div>
+                        <p>Parses non-tabular HTML structures to extract demographic data (Population, Area, Capital) for 250 countries. Formats unstructured web data into a clean CSV report.</p>
+                        <ul class="actions special">
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Web_Scraping_Countries.ipynb" class="button">View Script</a></li>
+                            <li><a href="https://github.com/TomerOrly/projectsData/blob/main/Countries%20of%20the%20World.csv" class="button">Get Data</a></li>
+                        </ul>
+                    </article>
+
+                </section>
+
+            </div>
+
+            <footer id="footer">
+                <section class="split contact">
+                    <section>
+                        <h3>Phone</h3>
+                        <p><a href="#">050-9493616</a></p>
+                    </section>
+                    <section>
+                        <h3>Email</h3>
+                        <p><a href="mailto:tomeror77@gmail.com">tomeror77@gmail.com</a></p>
+                    </section>
+                    <section>
+                        <h3>Social</h3>
+                        <ul class="icons alt">
+                            <li><a href="https://www.linkedin.com/in/tomer-orly-4a050522b/" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+                            <li><a href="https://tomerorly.github.io/Projects.IO/" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+                            <li><a href="https://x.com/tomerorly77" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+                        </ul>
+                    </section>
+                </section>
+            </footer>
+
+            <div id="copyright">
+                <ul><li>&copy; Tomer Orly Portfolio</li></ul>
+            </div>
+
+        </div>
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/jquery.scrollex.min.js"></script>
+        <script src="assets/js/jquery.scrolly.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>
